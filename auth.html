@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--=============== FAVICON ===============-->
+    <link rel="shortcut icon" href="assets/img/logo.png" type="image/x-icon">
+
+    <!--=============== REMIXICON ===============-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+    <title>dietsForYou</title>
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+</head>
+
+<body>
+    Auth DONE!
+    <!--==================== HEADER ====================-->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">
+                <img src="assets/img/logo.png" alt="logo-1" style="padding: 8px; height: 100px; width: 150px;">
+            </a>
+            
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link active-link">Home</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#pricing" class="nav__link">Programs</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#choose" class="nav__link">Choose Us</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#program" class="nav__link">Reviews</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#bmi" class="nav__link">BMI</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#faqs" class="nav__link">FAQs</a>
+                    </li>
+
+                    <div class="nav__link">
+                        <button onclick="logout()" class=" button nav__button">Logout</button>
+                    </div>
+
+                </ul>
+
+                <div class="nav__close" id="nav-close">
+                    <i class="ri-close-line"></i>
+                </div>
+            </div>
+
+            <!-- Toggle button -->
+            <div class="nav__toggle" id="nav-toggle">
+                <i class="ri-menu-line"></i>
+            </div>
+        </nav>
+    </header>
+
+    <!--==================== MAIN ====================-->
+    <main class="main">
+        <!--==================== HOME ====================-->
+        <section class="home section" id="home">
+            <div class="home__container container grid">
+                <div class="home__data">
+                    <h3 class="home__title" id="name" style="font-size: 50px">Hello👋🏽,</h3> <br>
+                    <h2 class="home__subtitle">ONE DAY OR</h2>
+                    <h1 class="home__title">DAY ONE</h1>
+                    <p class="home__description">
+                        BUILD YOUR DREAM BODY, INCREASE CONFIDENCE, AND BE FOREVER FIT
+                    </p>
+                    <a href="#" class="button button__flex" onclick="signIn()">
+                        Get Started <i class="ri-arrow-right-line"></i>
+                    </a>
+                </div>
+
+                <div class="home__images">
+                    <img src="assets/img/home-img.png" alt="home image" class="home__img">
+                    <div class="home__triangle home__triangle-3"></div>
+                    <div class="home__triangle home__triangle-2"></div>
+                    <div class="home__triangle home__triangle-1"></div>
+                    <div class="home__triangle home__triangle"></div>
+
+                </div>
+            </div>
+        </section>
+
+        <!--==================== Programs ====================-->
+        <section class="pricing section" id="pricing">
+            <div class="container">
+                <div class="section__data">
+                    <h2 class="section__subtitle">Programs</h2>
+                    <div class="section__titles">
+                        <h1 class="section__title-border">OUR</h1>
+                        <h1 class="section__title">SPECIAL PLAN</h1>
+                    </div>
+                </div>
+
+                <div class="pricing__container grid">
+                    <article class="pricing__card">
+                        <header class="pricing__header">
+                            <div class="pricing__shape">
+                                <img src="assets/img/pricing1.png" alt="pricing image" class="pricing__img">
+                            </div>
+
+                            <h1 class="pricing__title">BASIC PACKAGE</h1>
+                            <h2 class="pricing__number">$120</h2>
+                        </header>
+
+                        <ul class="pricing__list">
+                            <li class="pricing__item">
+                                <i class="ri-checkbox-circle-line"></i> 4 Weeks Program
+                            </li>
+                            <li class="pricing__item">
+                                <i class="ri-checkbox-circle-line"></i> Diet Plan
+                            </li>
+                            <li class="pricing__item pricing__item-opacity">
+                                <i class="ri-checkbox-circle-line"></i> Supplement Guidance
+                            </li>
+                            <li class="pricing__item pricing__item-opacity">
+                                <i class="ri-checkbox-circle-line"></i> Progress Tracking
+                            </li>
+                            <li class="pricing__item pricing__item-opacity">
+                                <i class="ri-checkbox-circle-line"></i> Online Meeting
+                            </li>
+                        </ul>
+
+                        <a href="#" class="button button__flex pricing__button">
+                            Purchase Now <i class="ri-arrow-right-line"></i>
+                        </a>
+                    </article>
+
+                    <article class="pricing__card pricing__card-active">
+                        <header class="pricing__header">
+                            <div class="pricing__shape">
+                                <img src="assets/img/pricing2.png" alt="pricing image" class="pricing__img">
+                            </div>
+
+                            <h1 class="pricing__title">PREMIUM PACKAGE</h1>
+                            <h2 class="pricing__number">$240</h2>
+                        </header>
+
+                        <ul class="pricing__list">
+                            <li class="pricing__item">
+                                <i class="ri-checkbox-circle-line"></i> 12 Weeks Program
+                            </li>
+                            <li class="pricing__item">
+                                <i class="ri-checkbox-circle-line"></i> Diet Plan
+                            </li>
+                            <li class="pricing__item pricing__item">
+                                <i class="ri-checkbox-circle-line"></i> Supplement Guidance
+                            </li>
+                            <li class="pricing__item pricing__item-opacity">
+                                <i class="ri-checkbox-circle-line"></i> Progress Tracking
+                            </li>
+                            <li class="pricing__item pricing__item-opacity">
+                                <i class="ri-checkbox-circle-line"></i> Online Meeting
+                            </li>
+                        </ul>
+
+                        <a href="#" class="button button__flex pricing__button">
+                            Purchase Now <i class="ri-arrow-right-line"></i>
+                        </a>
+                    </article>
+
+                    <article class="pricing__card">
+                        <header class="pricing__header">
+                            <div class="pricing__shape">
+                                <img src="assets/img/pricing3.png" alt="pricing image" class="pricing__img">
+                            </div>
+
+                            <h1 class="pricing__title">DIAMOND PACKAGE</h1>
+                            <h2 class="pricing__number">$420</h2>
+                        </header>
+
+                        <ul class="pricing__list">
+                            <li class="pricing__item">
+                                <i class="ri-checkbox-circle-line"></i> 24 Weeks Program
+                            </li>
+                            <li class="pricing__item">
+                                <i class="ri-checkbox-circle-line"></i> Diet Plan
+                            </li>
+                            <li class="pricing__item pricing__item">
+                                <i class="ri-checkbox-circle-line"></i> Supplement Guidance
+                            </li>
+                            <li class="pricing__item pricing__item">
+                                <i class="ri-checkbox-circle-line"></i> Progress Tracking
+                            </li>
+                            <li class="pricing__item pricing__item">
+                                <i class="ri-checkbox-circle-line"></i> Online Meeting
+                            </li>
+                        </ul>
+
+                        <a href="#" class="button button__flex pricing__button">
+                            Purchase Now <i class="ri-arrow-right-line"></i>
+                        </a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+
+        <!--==================== CHOOSE US ====================-->
+        <section class="choose section" id="choose">
+            <div class="choose__overflow">
+                <div class="choose__container container grid">
+                    <div class="choose__content">
+                        <div class="section__data">
+                            <h2 class="section__subtitle">Best Reason</h2>
+                            <div class="section__titles">
+                                <h1 class="section__title-border">WHY</h1>
+                                <h1 class="section__title">CHOOSE US ?</h1>
+                            </div>
+                        </div>
+
+                        <p class="choose__description">
+                            Choose your favorite Program and start now. Our goal is to change your view on fitness, so
+                            that it becomes apart of who you are and your lifestyle.
+                        </p>
+
+                        <div class="choose__data">
+                            <div class="choose__group">
+                                <h3 class="choose__number">150+</h3>
+                                <p class="choose__subtitle">Total Members</p>
+                            </div>
+                            <div class="choose__group">
+                                <h3 class="choose__number">20+</h3>
+                                <p class="choose__subtitle">Best trainers</p>
+                            </div>
+                            <div class="choose__group">
+                                <h3 class="choose__number">10+</h3>
+                                <p class="choose__subtitle">Programs</p>
+                            </div>
+                            <div class="choose__group">
+                                <h3 class="choose__number">10+</h3>
+                                <p class="choose__subtitle">Awards</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="choose__images">
+                        <img src="assets/img/choose-img.jpeg" alt="choose image" class="choose__img">
+                        <div class="choose__triangle choose__triangle-2"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--==================== Reviews ====================-->
+        <section class="program section" id="program">
+            <section class="program section" id="program">
+                <div class="container">
+                    <div class="section__data">
+                        <h2 class="section__subtitle">Reviews</h2>
+                        <div class="section__titles">
+                            <h1 class="section__title-border">RESULTS SPEAK </h1>
+                            <h1 class="section__title">LOUDER THAN WORDS</h1>
+                        </div>
+                    </div>
+
+                    <div class="testimonials">
+                        <div class="slider-container">
+                            <div class="slider">
+                                <div class="slide-box">
+                                    <!-- Testi One -->
+                                    <p class="comment">
+                                        I want to sincerely thank <b>dietsforyou</b> for sharing her helpful bulking
+                                        advice with me.
+                                        In my quest to develop muscle mass and meet my fitness objectives, their
+                                        knowledge and
+                                        direction have been crucial.
+                                    </p>
+                                    <img src="/responsive-gym-website/assets/img/program1.jpeg" />
+                                    <h3 class="name">Abhinav Thakur </h3>
+                                    <h4 class="job">Founder Of Devoker Company</h4>
+                                </div>
+                                <div class="slide-box">
+                                    <!-- Testi Two -->
+                                    <p class="comment">
+                                        Accepting My Path I started a fantastic journey of self-transformation exactly
+                                        one year ago.
+                                        As I stand here today, I am amazed by the amazing transformations that have
+                                        occurred inside
+                                        of me.
+                                    </p>
+                                    <img
+                                        src="https://images.unsplash.com/photo-1627541718143-1adc1b582e62?ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8bXVzbGltfGVufDB8MnwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" />
+                                    <h3 class="name">Rahul Dubey</h3>
+                                    <h4 class="job">Full stack Developer, Speaker</h4>
+                                </div>
+                                <div class="slide-box">
+                                    <!-- Testi Three -->
+                                    <p class="comment">
+                                        Well I started my weight loss journey 165 days back!! I went all the way from 85
+                                        kg to 68 kg
+                                        by constant support and guidance from dietsforyou. The dedication they have
+                                        shown in helping
+                                        me.
+                                    </p>
+                                    <img
+                                        src="https://images.unsplash.com/photo-1610216705422-caa3fcb6d158?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzJ8fGZhY2V8ZW58MHwyfDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" />
+                                    <h3 class="name">Kartik Verma</h3>
+                                    <h4 class="job">UX/UI Designer, Phtographer</h4>
+                                </div>
+                            </div>
+
+
+                            <a href="#!" class="control-slider btn-left">
+                                <img src="/responsive-gym-website/assets/img/back.png">
+                            </a>
+                            <a href="#!" class="control-slider btn-right">
+                                <img src="/responsive-gym-website/assets/img/front.png">
+                            </a>
+                        </div>
+                    </div>
+            </section>
+
+
+
+            <!--==================== CALCULATE BMI====================-->
+            <section class="calculate section" id="bmi">
+                <div class="calculate__container container grid">
+                    <div class="calculate__content">
+                        <div class="section__titles">
+                            <h1 class="section__title-border">CALCULATE</h1>
+                            <h1 class="section__title">YOUR BMI</h1>
+                        </div>
+
+                        <p class="calculate__description">
+                            The body mass index (BMI) calculator calculates
+                            body mass index from your weight and height.
+                        </p>
+
+                        <form action="" class="calculate__form" id="calculate-form">
+                            <div class="calculate__box">
+                                <input type="number" placeholder="Height" class="calculate__input" id="calculate-cm">
+                                <label for="" class="calculate__label">cm</label>
+                            </div>
+                            <div class="calculate__box">
+                                <input type="number" placeholder="Weight" class="calculate__input" id="calculate-kg">
+                                <label for="" class="calculate__label">kg</label>
+                            </div>
+
+                            <button type="submit" class="button button__flex">
+                                Calculate Now <i class="ri-arrow-right-line"></i>
+                            </button>
+                        </form>
+
+                        <p class="calculate__message" id="calculate-message"></p>
+                    </div>
+                    <video autoplay muted loop id="myVideo">
+                        <source src="video.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </section>
+    </main>
+
+    <!--==================== FAQs ====================-->
+    <section class="faq container" aria-level="Frequently Asked Questions" id="faqs">
+        <div class="container">
+            <div class="section__data">
+                <h2 class="section__subtitle">FAQs</h2>
+                <div class="section__titles">
+                    <h1 class="section__title-border">FREQUENTLY</h1>
+                    <h1 class="section__title">ASKED QUESTIONS</h1>
+                </div>
+            </div>
+            <div class="faq__body">
+                <details aria-expanded="true" class="faq__panel" open>
+                    <summary class="faq__label">I'm a beginner, will I be able to do your workouts?</summary>
+                    <div class="faq__panel-body">
+                        <p class="faq__panel-answer">My workouts and programs work with any level of fitness. Plus, I
+                            walk
+                            you through all exercises with easy-to-follow
+                            videos and simple written instructions. This means you'll be able to do all my moves easily,
+                            accurately, and safely.</p>
+                    </div>
+                </details>
+                <details aria-expanded="false" class="faq__panel">
+                    <summary class="faq__label">Do I need access to a gym?</summary>
+                    <div class="faq__panel-body">
+                        <p class="faq__panel-answer">Not necessary, we offer both gym and home-workout plans designed
+                            according to your body type, lifestyle and goals.</p>
+                    </div>
+                </details>
+                <details aria-expanded="false" class="faq__panel">
+                    <summary class="faq__label">Will the plan be customized?</summary>
+                    <div class="faq__panel-body">
+                        <p class="faq__panel-answer">Yes, once you've purchased your plan, you will receive a
+                            confirmation email with a fitness form asking you a few questions. This helps me customize
+                            the program according to your body which guarantees the best results.</p>
+                    </div>
+                </details>
+                <details aria-expanded="false" class="faq__panel">
+                    <summary class="faq__label">Is the meal plan budget friendly?</summary>
+                    <div class="faq__panel-body">
+                        <p class="faq__panel-answer">All the recipes are easy, healthy and budget friendly. No crazy
+                            ingredients and very much sustainable.</p>
+                    </div>
+                </details>
+                <details aria-expanded="false" class="faq__panel">
+                    <summary class="faq__label">Is pure vegetarian diet plan available?</summary>
+                    <div class="faq__panel-body">
+                        <p class="faq__panel-answer">Yes, 100% pure vegetarian diet plan is also available.</p>
+                    </div>
+                </details>
+                <details aria-expanded="false" class="faq__panel">
+                    <summary class="faq__label">Are supplements necessary?</summary>
+                    <div class="faq__panel-body">
+                        <p class="faq__panel-answer">No. You can follow the program and see amazing results without
+                            supplements. The supplements in your program will only be recommendations as they can
+                            enhance performance, recovery and results..</p>
+                    </div>
+                </details>
+                <details aria-expanded="false" class="faq__panel">
+                    <summary class="faq__label">How long will it take for my plan to be sent?</summary>
+                    <div class="faq__panel-body">
+                        <p class="faq__panel-answer">It will take 3-4 days to build the perfect plan for you & will be
+                            sent to you 1-2 days before the start date of your program.</p>
+                    </div>
+                </details>
+                <details aria-expanded="false" class="faq__panel">
+                    <summary class="faq__label">Are all months the same?</summary>
+                    <div class="faq__panel-body">
+                        <p class="faq__panel-answer">No, each month is different. This will mean progress, change of
+                            exercises, gradual increase in loads or intensities and changes in your eating plan that is
+                            constantly updated. It is about progress and improvement.</p>
+                    </div>
+                </details>
+                <details aria-expanded="false" class="faq__panel">
+                    <summary class="faq__label">Can I sign-up now and start my program later?</summary>
+                    <div class="faq__panel-body">
+                        <p class="faq__panel-answer">Yes, absolutely. You can sign-up now and select a later start date
+                            as per your convenience.</p>
+                    </div>
+                </details>
+            </div>
+    </section>
+
+    <!--==================== FOOTER ====================-->
+    <footer class="footer section" id="footer">
+        <div class="footer__container container grid">
+            <div>
+                <a href="#" class="footer__logo">
+                    dietsforyou
+                </a>
+                <p class="footer__description">
+                    Subscribe for company <br> updates below.
+                </p>
+
+                <form action="" class="footer__form" id="contact-form">
+                    <input type="email" name="user_email" placeholder="Your Email" class="footer__input"
+                        id="contact-user">
+                    <button type="submit" class="button">
+                        Subscribe
+                    </button>
+                </form>
+
+                <p class="footer__message" id="contact-message"></p>
+            </div>
+
+            <div class="footer__content">
+                <div>
+                    <h3 class="footer__title">
+                        SITE MAP
+                    </h3>
+
+                    <ul class="footer__links">
+                        <li>
+                            <a href="#home" class="footer__link">Home</a>
+                        </li>
+                        <li>
+                            <a href="#choose" class="footer__link">Choose Us</a>
+                        </li>
+                        <li>
+                            <a href="#program" class="footer__link">Reviews</a>
+                        </li>
+                        <li>
+                            <a href="#bmi" class="footer__link">BMI</a>
+                        </li>
+                        <li>
+                            <a href="#faqs" class="footer__link">FAQs</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="footer__title">
+                        PRICING
+                    </h3>
+
+                    <ul class="footer__links">
+                        <li>
+                            <a href="#pricing" class="footer__link">Basic</a>
+                        </li>
+                        <li>
+                            <a href="#pricing" class="footer__link">Premium</a>
+                        </li>
+                        <li>
+                            <a href="#pricing" class="footer__link">Diamond</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="footer__title">
+                        COMPANY
+                    </h3>
+
+                    <ul class="footer__links">
+                        <li>
+                            <a href="#" class="footer__link">About Us</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer__link">Privacy Policy</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer__link">Refund Policy</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer__link">Terms & Conditions</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="footer__group">
+                <ul class="footer__social">
+                    <a href="https://www.facebook.com/dietsforyoubysr/" target="_blank" class="footer__social-link">
+                        <i class="ri-facebook-circle-fill"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/company/diets-for-you/" target="_blank"
+                        class="footer__social-link">
+                        <i class="ri-linkedin-fill"></i>
+                    </a>
+                    <a href="https://www.instagram.com/dietsforyou_sr/" target="_blank" class="footer__social-link">
+                        <i class="ri-instagram-line"></i>
+                    </a>
+                </ul>
+
+                <span class="footer__copy">
+                    &#169; Copyright - 2023 <b>dietsforyou</b> <br> All rights reserved
+                </span>
+            </div>
+        </div>
+    </footer>
+
+    <!--========== SCROLL UP ==========-->
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class="ri-arrow-up-line"></i>
+    </a>
+
+    <!--=============== SCROLLREVEAL ===============-->
+    <script src="assets/js/scrollreveal.min.js"></script>
+
+    <!--=============== EMAIL JS ===============-->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="assets/js/main.js"></script>
+    <script src="script.js"></script>
+
+    <script>
+
+        let params = {}
+        let regex = /([^&=]+)=([^&]*)/g, m
+
+        while (m = regex.exec(location.href)) {
+            params[decodeURIComponent(m[1])] = decodeURIComponent(m[2])
+        }
+
+        if(Object.keys(params).length > 0){
+            localStorage.setItem('authInfo',JSON.stringify(params))
+        }
+        // hide access token
+        window.history.pushState({},document.title,"/" + "auth.html")
+
+        let info = JSON.parse(localStorage.getItem('authInfo'))
+        console.log(JSON.parse(localStorage.getItem('authInfo')))
+        console.log(info['access_token'])
+        console.log(info['expires_in'])
+
+        fetch("https://www.googleapis.com/oauth2/v3/userinfo",{
+            headers:{
+                "Authorization": `Bearer ${info['access_token']}`
+            }
+        })
+        .then((data) => data.json())
+        .then((info) => {
+            console.log(info)
+            document.getElementById('name').innerHTML += info.name
+            // can add a image of user but rn i don;t think it's necessary to implemnt, to do so just use id image
+            document.getElementById('image').setAttribute('src',info.picture)
+
+        })
+        function logout(){
+            fetch("https://oauth2.googleapis.com/revoke?token=" + info['access_token'],{
+                method: 'POST',
+                headers:{
+                    'content-type':'application/x-www-form-urlencoded'
+                }
+            })
+            .then((data) => {
+                location.href ="http://localhost:5500/index.html"
+            })
+        }
+    </script>
+
+</body>
+
+</html>
