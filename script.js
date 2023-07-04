@@ -8,7 +8,7 @@ function signIn() {
 
     let params = {
         "client_id": "300591576969-nnv3e2emimo421dmupkqjdmouh01d34k.apps.googleusercontent.com",
-        "redirect_uri": "https://astounding-custard-3c4d59.netlify.app/auth",
+        "redirect_uri": "http://127.0.0.1:5500/auth",
         "response_type": "token",
         "scope": "https://www.googleapis.com/auth/userinfo.profile",
         "include_granted_scopes": 'true',
