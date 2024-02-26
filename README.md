@@ -1,5 +1,5 @@
 #  💪 Responsive Gym Website Design
-https://dietforyoutest.netlify.app/
+  https://dietforyoutest.netlify.app/
 
 - Responsive Gym Website Design Using HTML CSS & JavaScript
 - Contains animations when scrolling.
@@ -8,5 +8,3 @@ https://dietforyoutest.netlify.app/
 - Developed first with the Mobile First methodology, then for desktop.
 - Compatible with all mobile devices and with a beautiful and pleasant user interface.
 
-
-![preview img](/preview.png)
